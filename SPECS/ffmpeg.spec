@@ -154,7 +154,6 @@ BuildRequires:  lame-devel >= 3.98.3
 %{?_with_caca:BuildRequires: libcaca-devel}
 %{!?_without_cdio:BuildRequires: libcdio-paranoia-devel}
 %{?_with_chromaprint:BuildRequires: libchromaprint-devel}
-%{?_with_crystalhd:BuildRequires: libcrystalhd-devel}
 %{!?_without_lensfun:BuildRequires: lensfun-devel}
 %if 0%{?_with_ieee1394}
 BuildRequires:  libavc1394-devel
@@ -296,7 +295,6 @@ This package contains development files for %{name}
     %{!?_without_amr:--enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvo-amrwbenc --enable-version3} \\\
     --enable-bzlib \\\
     %{?_with_chromaprint:--enable-chromaprint} \\\
-    %{!?_with_crystalhd:--disable-crystalhd} \\\
     --enable-fontconfig \\\
     %{!?_without_frei0r:--enable-frei0r} \\\
     --enable-gcrypt \\\
